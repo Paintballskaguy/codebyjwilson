@@ -6,6 +6,7 @@
     <title>John Wilson | Web Developer & IT Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -19,72 +20,7 @@
             }
         }
     </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: #e2e8f0;
-        }
-        
-        .hero-bg {
-            background: radial-gradient(circle at top right, rgba(14, 165, 233, 0.1) 0%, rgba(30, 41, 59, 0) 50%);
-        }
-        
-        .card {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(100, 116, 139, 0.2);
-            transition: all 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(14, 165, 233, 0.4);
-        }
-        
-        .section-title {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 50%;
-            height: 4px;
-            background: linear-gradient(90deg, #0ea5e9, #14b8a6);
-            border-radius: 2px;
-        }
-        
-        .skill-badge {
-            background: rgba(14, 165, 233, 0.15);
-            border: 1px solid rgba(14, 165, 233, 0.3);
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 20px;
-            width: 2px;
-            background: rgba(100, 116, 139, 0.3);
-        }
-        
-        .timeline-dot {
-            position: absolute;
-            left: 15px;
-            top: 5px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #0ea5e9;
-        }
-    </style>
+
 </head>
 <body class="min-h-screen">
     <!-- Navigation -->
@@ -129,7 +65,7 @@
                     <a href="#contact" class="border-2 border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-primary hover:text-slate-900 transition">Contact Me</a>
                 </div>
                 <div class="mt-8 flex space-x-4">
-                    <a href="www.linkedin.com/in/john-wilson-2ab3b358" class="text-slate-400 hover:text-primary transition">
+                    <a href="https://www.linkedin.com/in/john-wilson-2ab3b358" class="text-slate-400 hover:text-primary transition">
                         <i class="fab fa-linkedin-in text-2xl"></i>
                     </a>
                     <a href="https://github.com/Paintballskaguy" class="text-slate-400 hover:text-primary transition">
@@ -161,7 +97,7 @@
                 <div class="card p-8 rounded-xl">
                     <h3 class="text-2xl font-semibold text-white mb-6">Professional Summary</h3>
                     <p class="text-slate-300 mb-6">
-                        I combine hands-on expertise in network administration (Active Directory, Fortigate, Aruba), IT security (HIPAA compliance, disaster recovery), and technical support with current training in full-stack development (Python, JavaScript, Docker, Git).
+                        I combine hands-on expertise in network administration (Active Directory, Fortigate, Aruba), IT security (HIPAA compliance, disaster recovery), and technical support with current training in full-stack development (Python, Tailwind, Bootstrap, HTML/CSS, JavaScript, Docker, Git).
                     </p>
                     <p class="text-slate-300">
                         My approach integrates technical excellence with business strategy to create solutions that drive operational efficiency and measurable results.
@@ -173,7 +109,6 @@
                     
                     <div class="relative pl-12 timeline">
                         <div class="relative mb-8">
-                            <div class="timeline-dot"></div>
                             <div>
                                 <h4 class="font-bold text-lg text-white">Diploma in Computer Science and Specialization</h4>
                                 <div class="flex justify-between text-sm text-slate-400 mb-2">
@@ -187,7 +122,6 @@
                         </div>
                         
                         <div class="relative mb-8">
-                            <div class="timeline-dot"></div>
                             <div>
                                 <h4 class="font-bold text-lg text-white">Bachelor of Science in Business Management</h4>
                                 <div class="flex justify-between text-sm text-slate-400 mb-2">
@@ -198,7 +132,6 @@
                         </div>
                         
                         <div class="relative">
-                            <div class="timeline-dot"></div>
                             <div>
                                 <h4 class="font-bold text-lg text-white">Associate of Science in Business/Entrepreneurship</h4>
                                 <div class="flex justify-between text-sm text-slate-400 mb-2">
@@ -389,26 +322,27 @@
                 <!-- Project 2 (Placeholder) -->
                 <div class="card rounded-xl overflow-hidden">
                     <div class="h-48 bg-gradient-to-r from-indigo-600 to-purple-700 flex items-center justify-center">
-                        <span class="text-white text-4xl font-bold">COMING SOON</span>
+                        <span class="text-white text-4xl font-bold">Event Center Website</span>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-xl font-bold text-white mb-2">Next Project in Development</h3>
-                        <p class="text-slate-300 mb-6">Currently working on a new project that combines my IT expertise with full-stack development skills. More details coming soon!</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Boman Twin Event Center Website</h3>
+                        <p class="text-slate-300 mb-6">This is the website that I made for the Boman Twin Event Center. This website is always being updated.</p>
                         
                         <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-indigo-900 text-indigo-200 rounded-full text-sm">Node.js</span>
-                            <span class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-sm">React</span>
-                            <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Docker</span>
+                            <span class="px-3 py-1 bg-cyan-900 text-cyan-200 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-teal-900 text-teal-200 rounded-full text-sm">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Tailwind</span>
+                            <span class="px-3 py-1 bg-purple-900 text-purple-200 rounded-fullProject details under NDA until completion text-sm">Custom Calendar</span>
                         </div>
                         
                         <div class="space-y-3">
                             <div class="flex">
                                 <i class="fas fa-lock text-primary mr-3 mt-1"></i>
-                                <p class="text-slate-300">Project details under NDA until completion</p>
+                                <p class="text-slate-300">Built with client input and with a 2 week deadline</p>
                             </div>
                             <div class="flex">
                                 <i class="fas fa-calendar text-primary mr-3 mt-1"></i>
-                                <p class="text-slate-300">Expected completion: Q4 2024</p>
+                                <p class="text-slate-300">Launched in Spring 2024.</p>
                             </div>
                         </div>
                     </div>
